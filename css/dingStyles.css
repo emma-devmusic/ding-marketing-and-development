@@ -186,7 +186,11 @@
     padding: 1rem;
     transition: all .5s ease;
     height: min-content;
+}
 
+.card2 i.frequency {
+    font-size: .8rem;
+    color: var(--dark);
 }
 
 .card2:hover {
@@ -220,6 +224,7 @@
 }
 
 .list-unstyled li {
+    color: var(--dark);
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -231,7 +236,7 @@
 }
 
 .media .fa-times {
-    color: var(--dark);
+    color:rgb(192, 0, 0);
 }
 
 
