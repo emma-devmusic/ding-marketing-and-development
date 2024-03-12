@@ -3,6 +3,7 @@
     --secondary: #7752EB;
     --light: #E8E2E2;
     --dark: #212322;
+    --darksoft: #535353;
     --outstanding: #ff9e0e;
 }
 
@@ -165,6 +166,75 @@
     transition: .5s;
     z-index: -1;
 }
+
+
+/*
+==============================================================
+    OUR TEAM
+==============================================================
+*/
+
+#price-section h5 {
+    color: var(--darksoft);
+    transition: all .5s ease;
+
+}
+
+.card2 {
+    margin: .5rem .5rem;
+    max-width: 300px;
+    padding: 1rem;
+    transition: all .5s ease;
+
+}
+
+.card2:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0,.1);
+    transition: all .5s ease;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.card2:hover h5 {
+    color: var(--secondary) !important;
+    transition: all .5s ease;
+
+}
+
+.card2:hover .price {
+    color: rgb(17, 195, 23);
+    transition: all .5s ease;
+}
+
+.price {
+    transition: all .5s ease;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--darksoft);
+}
+
+.price .currency {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+.media .fa-check {
+    color: var(--primary);
+}
+
+.media .fa-times {
+    color: var(--dark);
+}
+
+
+
 
 /*
 ==============================================================
