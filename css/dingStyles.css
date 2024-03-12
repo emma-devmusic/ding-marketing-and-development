@@ -185,6 +185,7 @@
     max-width: 300px;
     padding: 1rem;
     transition: all .5s ease;
+    height: min-content;
 
 }
 
