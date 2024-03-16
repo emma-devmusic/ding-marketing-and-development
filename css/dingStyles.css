@@ -128,7 +128,36 @@
 }
 
 
+/*
+==============================================================
+    TEAM PROVISORIO
+==============================================================
+*/
 
+#team-provisorio {
+    margin: 10rem 0;
+}
+.box-team-provisorio .team-item .icons {
+    transform: translate(20px,10px);
+}
+
+.box-team-provisorio .team-item img {
+    object-fit: cover;
+    transform: translate(-10px,20px);
+}
+
+.emma {
+    z-index: 10;
+}
+.seba {
+    z-index: 9;
+}
+.lucas {
+    z-index: 8;
+}
+.marcos {
+    z-index: 7;
+}
 
 /*
 ==============================================================
@@ -145,7 +174,7 @@
 
 @media (min-width: 992px) {
     #box-team {
-        transform: translate(-38px, 0px);
+        /* transform: translate(-38px, 0px); */
     }
     .team-item::after {
         width: 240px !important;
@@ -166,14 +195,29 @@
     transition: .5s;
     z-index: -1;
 }
+/*
+==============================================================
+    PROJECTS
+==============================================================
+*/
+.second .img-fluid, .first .img-fluid {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
 
+.link {
+    text-decoration: underline;
+}
 
 /*
 ==============================================================
-    OUR TEAM
+    PRICE
 ==============================================================
 */
-
+#price-section {
+    margin: 7rem 0;
+}
 #price-section h5 {
     color: var(--darksoft);
     transition: all .5s ease;
@@ -260,9 +304,23 @@
 }
 
 .box-contact {
+    border-radius: 10px;
     gap: 2rem;
     margin-bottom: 3rem;
-    min-width: 325px;
+    width: 100%;
+    border: 1px solid white;
+    transition: all .3s ease;
+}
+
+.box-contact:hover {
+    box-shadow: 0 0 20px rgba(109, 0, 242, 0.591) !important;
+    transition: all.5s ease;
+    transform: translateY(-2px);
+    transition: all .3s ease;
+}
+
+.box-contact h5 {
+    color: var(--darksoft);
 }
 
 .box-contact .icon i{
@@ -284,11 +342,26 @@
         margin-top: -2rem;
     }
 }
-@media (min-width: 576px) and (max-width:768px) {
+@media (min-width: 576px) and (max-width:700px) {
     .container-box-contact {
         flex-direction: column;
         align-items: center;
         width: 400px;
-        transform: translateX(-70px);
+        /* transform: translateX(-70px); */
+    }
+}
+
+@media (max-width: 400px) {
+    .box-contact .icon i {
+        height: 45px;
+        width: 45px;
+    }
+    .box-contact {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        width: 100%;
+        max-width: 250px;
     }
 }
